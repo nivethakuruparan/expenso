@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Page</title>
+
+    <script src="https://kit.fontawesome.com/a81ce16444.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <nav>
+        <label class="logo">E<span>x</span>penso<i class="fas fa-money-check-alt"></i></label>
+        <ul class="nav-links">
+            <li><a href="/home/home.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/src/App.js">Expenso</a></li>
+            <li><a href="/advice/advice.html">Advice</a></li>
+            <li><a href="/contact/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-links-mobile">
+            <div class="menu-icon-active"><i class='fas fa-times'></i></div>
+            <div class="menu-icon"><i class='fas fa-bars'></i></div>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>CONTACT <span>US</span></h1>
+        <p>Feel free to ask <span>questions</span> or give us <span>feedback</span> about our application!</p>
+    </div>
+
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH...</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <textarea id="message" rows="4" placeholder="Type Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "hackathon.expenso@gmail.com",
+                Password: "E6B2091CAD828F9E6B3A568D30F3A9398AD3",
+                To: 'hackathon.expenso@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Expenso Inquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
+
+</body>
+
+</html>

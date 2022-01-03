@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 12px;
+  font-family: 'Dosis', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fef9ef;
+}
+
+span{
+  color: #FFA10A;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	margin: 0 auto;
+  margin-top: 30px;
+	padding: 30px 20px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-left: 7px solid #227C9D;
+}
+
+.container h4{
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.container h3{
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #227C9D;
+}
+
+.container:hover{
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+/* Title Section */
+.title{
+  flex-direction: column;
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #227C9D;
+}
+
+.title h1{
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.title p{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.top-container{
+  flex-direction: column;
+	max-width: 80%;
+	margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid #227C9D;
+}
+
+.income{
+  margin-top: 20px;
+  border-left-color:#17C3B2;
+}
+
+.income h3{
+  color: #17C3B2;
+}
+
+.expense{
+  margin-top: 20px;
+  border-left-color: #FE6D73;
+  margin-bottom: 30px;
+}
+
+.expense h3{
+  color: #FE6D73;
+}
+
+.add-transaction{
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: left;
+  border-bottom: 3px solid #227C9D;
+}
+
+.add-transaction-box{
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  border-top: 8px solid #FFA10A;
+}
+
+.add-transaction h3{
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add-transaction label{
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.add-transaction label span{
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+.add-transaction .btn {
+  cursor: pointer;
+  background-color: #227C9D;
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.add-transaction .btn:hover{
+  color: white;
+  background: #58B7DA;
+}
+
+.transaction-list{
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.transaction-list-box{
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  border-top: 8px solid #FFA10A;
+}
+
+.transaction-list h3{
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid #58B7DA;
+}
+
+.transaction-list .list {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.list li {
+  background-color: #fef9ef;
+  box-shadow: var(--box-shadow);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.list li.plus {
+  border-right: 5px solid #17C3B2;
+}
+
+.list li.minus {
+  border-right: 5px solid #FE6D73;
+}
+
+.list li span {
+  font-weight: 700;
+}
+
+.list li.plus span {
+  color: #17C3B2;
+}
+
+.list li.minus span {
+  color: #FE6D73;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: red;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+  line-height: 8px;
+  padding: 5px 5px;
+  padding-bottom: 11px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 5px 0 0 5px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Page</title>
+
+    <script src="https://kit.fontawesome.com/a81ce16444.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="advice.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <nav>
+        <label class="logo">E<span>x</span>penso<i class="fas fa-money-check-alt"></i></label>
+        <ul class="nav-links">
+            <li><a href="/home/home.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/src/App.js">Expenso</a></li>
+            <li><a href="/advice/advice.html">Advice</a></li>
+            <li><a href="/contact/index.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-links-mobile">
+            <div class="menu-icon-active"><i class='fas fa-times'></i></div>
+            <div class="menu-icon"><i class='fas fa-bars'></i></div>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>A<span>D</span>VICE</h1>
+        <p>We provide <span>tips</span> and <span>tricks</span> on how to stay on top of your budget!</p>
+    </div>
+
+    <main class="container">
+        <section class="card">
+            <img src="img/image-1.png">
+            <div>
+                <h3>Tip 1: Make a Budget</h3>
+                <p> One of the most important things to keep in mind is to evaluate your spendings and savings. Thus,
+                    one of the first steps that you need to do is to compare your income and expenses. This can be done
+                    using <span>EXPENSO</span>. Are you in the green (income greater than expenses)? Great! Make sure
+                    you're saving money every month.
+
+                    If you're in the red (expenses greater than income), you'll want to think about ways to reduce your
+                    spending or increase what you're making each month.
+                </p>
+                <a href="https://students.ubc.ca/enrolment/finances/funding-studies/financial-planning"
+                    class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="img/image-2.jpeg">
+            <div>
+                <h3>Tip 2: Track your Spending</h3>
+                <p>Write down every purchase you make or use a budget app like <span>EXPENSO</span>.
+                    Simply tracking what you spend can help you notice patterns, make you more aware of where your money
+                    is going, and help you identify if you need to make a change.
+                </p>
+                <a href="https://www.banklandmark.com/blog/how-to-make-a-budget-plan-from-scratch/" class="btn">Learn
+                    More</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="img/image-3.jpg">
+            <div>
+                <h3>Tip 3: Look out for Free Money</h3>
+                <p>Scholarships, grants, and bursaries are available everywhere. Don't waste your chance on securing
+                    important financial aids. Many scholarships receive a small number of
+                    applications, so it's worth putting in the time and effort to apply.
+                </p>
+                <a href="https://studentscholarships.org/" class="btn">Find Scholarships</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="img/image-4.jpg">
+            <div>
+                <h3>Tip 4: SAVE MONEY ON TEXTBOOKS/SELL YOUR TEXTBOOKS</h3>
+                <p>Buy used textbooks from former students on Craigslist, Kijiji, or Facebook groups.
+
+                    Also check your campus store to see if they have a rental program available for some books. Also,
+                    don't forget to check Amazon for some great deals.
+
+                    Once your done with your textbooks, don't leave it sitting in the dust. Find a way to sell it by
+                    finding students that need it.
+
+                </p>
+                <a href="https://www.kijiji.ca/b-vancouver/ubc-textbook/k0l1700287?dc=true" class="btn">Find
+                    Textbooks</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="img/image-5.png">
+            <div>
+                <h3>Tip 5: Food/Grocery</h3>
+                <p>Your greatest monthly spend, aside from rent, is most certainly food. While eating out frequently is
+                    the most convenient choice, it is also the most expensive. Adopting a do-it-yourself approach to
+                    food consumption is an excellent method to save money while also improving your cooking abilities.
+                    Moreover, you'll know exactly what items you'll need to buy if you plan out your meals for the week
+                    ahead.
+                </p>
+                <a href="https://students.ubc.ca/ubclife/adult-grocery-shopping" class="btn">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="./advice.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
