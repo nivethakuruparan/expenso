@@ -13,7 +13,7 @@
 4. `npm start`
 
 
-#### If Error Occurs While Running
+#### If Error Occurs While Running, Try
 1. `npm install`
 2. `cd client`
 3. `npm install`
