@@ -2,7 +2,7 @@
 💻 This is the submission for the Stem Warrior Hack 2022. <br />
 👩‍💻 This project is made by Iqra Awan, Tanveer Brar and Nivetha Kuruparan <br />
 📄  <br/>
-📋 For more information, please view the project on devpost: https://devpost.com/software/pawsitive-t4pogf <br />
+📋 For more information, please view the project on devpost: https://devpost.com/software/expenso-9biwcu <br />
 
 ## Run Locally
 
