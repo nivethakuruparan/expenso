@@ -6,7 +6,7 @@
 
 ## Run Locally
 
-###In Terminal
+### In Terminal
 1. `cd client`
 2. `npm run build`
 3. `cd ..`
