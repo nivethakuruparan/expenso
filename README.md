@@ -18,4 +18,4 @@
 3. `npm install`
 4. `cd ..`
 5. `npm run dev`
-6. open browser and type http://localhost:5000/
+6. open browser and search http://localhost:5000/
