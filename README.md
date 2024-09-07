@@ -10,7 +10,7 @@
 2. `npm run build`
 3. `cd ..`
 4. `npm start`
-5.  open browser and search http://localhost:5000/
+5. Go to http://localhost:5000/
 
 
 #### If Error Occurs While Running, try
